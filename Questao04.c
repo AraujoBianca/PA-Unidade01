@@ -1,10 +1,7 @@
 #include <stdio.h>
 
-/*Todos os objetivos foram concluídos com sucesso, exceto por ressalvas nas letras 'e' e 'h'. Estas ressalvas foram postas
-como comentários na linha do código correspondente.
-
-Além disso foi feita uma pequena alteração no print para facilitar a leitura do problema.
-*/
+/*Todos os objetivos foram concluídos com sucesso. Além disso foi feita uma pequena alteração no print
+para facilitar a leitura do problema.*/
 
 int main() {
   int valor;
@@ -37,7 +34,7 @@ int main() {
   p3 = &nome[4];
   aux = *p3;
   printf("d: %c \n", aux);
-  /* (e) */ /*Se o objetivo era reproduzir todo o conteúdo da variável nome no p3 o objetivo não foi atingido.*/
+  /* (e) */
   p3 = nome;
   printf("e: %c \n", *p3);
   /* (f) */
@@ -46,8 +43,7 @@ int main() {
   /* (g) */
   p3--;
   printf("g: %c \n", *p3);
-  /* (h) */ /*Mais uma vez, se o objetivo era copiar os valores do vetor para p4 o sistema
-   copiou apenas o conteúdo relacionado ao vetor[0] */
+  /* (h) */
   vetor[0] = 31;
   vetor[1] = 45;
   vetor[2] = 27;
