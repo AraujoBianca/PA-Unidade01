@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <locale.h>
 
 void pintarParede(float larg, float h, float metros);
 
 int main(){
-
-    /*Ponteiro para função é uma forma de definir em tempo de execução qual função será executada sem
-    precisar escrever o nome da função de forma explícita naquele ponto.*/
+    setlocale(LC_ALL,"Portuguese");
+    printf("12. O que é um ponteiro para uma função? Pesquise na Internet referências sobre o assunto e escreva um pequeno programa exemplificando o uso deste recurso.\n\n");
+    printf("Ponteiro para função é uma forma de definir em tempo de execução qual função será executada sem precisar escrever o nome da função de forma explícita naquele ponto.\n\n");
 
     void (*ppp)(float,float,float) = pintarParede;
     float larg, h,metros;
