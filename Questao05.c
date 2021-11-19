@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <locale.h>
 
 /*Foram feitas algumas alterações para uma melhor compreensão da saída do código:
 
@@ -11,19 +12,21 @@ i = 2 | vet[2] = 3.3 | *(f + 2) = 3.3 | &vet[2] = 61FDE8 | (f + 2) = 61FDE8 |
 i = 3 | vet[3] = 4.4 | *(f + 3) = 4.4 | &vet[3] = 61FDEC | (f + 3) = 61FDEC |
 i = 4 | vet[4] = 5.5 | *(f + 4) = 5.5 | &vet[4] = 61FDF0 | (f + 4) = 61FDF0 |
 
-Ou seja, o ponteiro f recebe as informações do vetor vet por referência passando a referencia a mesma informação
-que o vetor vet, possuindo inclusive o mesmo endereço.
+Ou seja, o ponteiro f recebe o primeiro endereço do vetor vet, por referência, passando a referenciar a mesma informação
+que o vetor vet.
 
 */
 
 
 int main(void){
-  float vet[5] = {1.1,2.2,3.3,4.4,5.5};
-  float *f;
-  int i;
-  f = vet;
-  printf(" cont |     valor    |      valor     |     endereco     |     endereco     |");
-  for(i = 0 ; i <= 4 ; i++){
+    setlocale(LC_ALL, "Portuguese");
+    printf("5. Determine o que será mostrado pelo seguinte programa (compile-o, execute-o e verifique se foram obtidas as respostas esperadas).\n\n");
+    float vet[5] = {1.1,2.2,3.3,4.4,5.5};
+    float *f;
+    int i;
+    f = vet;
+    printf(" cont |     valor    |      valor     |     endereco     |     endereco     |");
+    for(i = 0 ; i <= 4 ; i++){
         printf("\ni = %d | ",i);
         printf("vet[%d] = %.1f | ",i, vet[i]);
         printf("*(f + %d) = %.1f | ",i, *(f+i));

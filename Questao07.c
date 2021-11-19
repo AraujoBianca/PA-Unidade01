@@ -1,6 +1,11 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main(){
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("7. Considerando a declaração int mat[4], *p, x;, quais das seguintes expressões são válidas? Justifique.\n\n");
+
     int mat[4], *p, x;
 
     p = mat + 1; /*Aqui o sistema pega o 1º endereço por referência de maf e depois anda 1 byte do tipo int para chegar
