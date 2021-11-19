@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 int compararCrescente(const void * a, const void * b){
     if (*(float*)a == *(float*)b){ /* Nessa linha eu converto o void * para p tipo do vetor para o qsort que é float, se repete abaixo*/
@@ -14,6 +15,8 @@ int compararCrescente(const void * a, const void * b){
 }
 
 int main(){
+    setlocale(LC_ALL, "Portuguese");/*habilita a acentuação para o português*/
+
     int n, i;
 
     printf("Quantos valores serão digitados? ");

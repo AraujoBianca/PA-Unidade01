@@ -1,6 +1,13 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main(){
+    setlocale(LC_ALL, "Portuguese");
+
+    printf("11. Suponha que as seguintes declarações tenham sido realizadas:\n\n");
+    printf("float aloha[10], coisas[10][5], *pf, value = 2.2;\nint i=3;\n");
+    printf("\nIdentifique quais dos seguintes comandos é válido ou inválido:\n");
+
     float aloha[10], coisas[10][5], *pf, value = 2.2;
     int i=3;
 
