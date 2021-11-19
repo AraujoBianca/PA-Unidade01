@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*8. O que fazem os seguintes programas em C?*/
 
 /*O primeiro código mostra os valores contidos no vetor vet[]*/
 

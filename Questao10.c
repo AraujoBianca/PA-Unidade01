@@ -1,6 +1,9 @@
 #include <stdio.h>
+#include <locale.h>
 
 int main(){
+    setlocale(LC_ALL, "Portuguese");
+    printf("10. Implemente um programa de computador para testar estas suposições e compare as respostas oferecidas pelo programa com as respostas que você idealizou.\n\n");
     printf("O tamanho no meu pc dos tipos dos dados: \n");
     printf("\tSize of char: %d\n", sizeof(char));
     printf("\tSize of int: %d\n", sizeof(int));
@@ -39,4 +42,6 @@ int main(){
         printf("%p ", s + i);
     }
     printf("\n");
+
+    printf("\nConforme observado a resposta idealizada na questão anterior seguiu a lógica operacional do meu computador.\n");
 }
