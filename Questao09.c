@@ -1,5 +1,13 @@
 /*
-Quest„o 09:
+9. Seja x um vetor de 4 elementos, declarado da forma TIPO x[4];. Suponha que depois da
+declara√ß√£o, x esteja armazenado no endere√ßo de mem√≥ria 4092 (ou seja, o endere√ßo de x[0]).
+Suponha tamb√©m que na m√°quina seja usada uma vari√°vel do tipo char ocupa 1 byte, do tipo
+int ocupa 2 bytes, do tipo float ocupa 4 bytes e do tipo double ocupa 8 bytes. Quais ser√£o os
+valores de x+1, x+2 e x+3 se:
+‚ó¶ x for declarado como char?
+‚ó¶ x for declarado como int?
+‚ó¶ x for declarado como float?
+‚ó¶ x for declarado como double?
 
 char - ocupa 1 byte
 int - ocupa 2 bytes
@@ -10,22 +18,22 @@ TIPO x[4];
 
 &x = 4092;
 
-Quais ser„o os valores de x+1, x+2 e x+3 se (considerei que 4092 esteja em hexadecimal):
+Quais ser√£o os valores de x+1, x+2 e x+3 se (considerei que 4092 esteja em hexadecimal):
 
 x for declarado como char?
-    x+1 ser· igual a prÛxima posiÁ„o mais 1 byte, isto È, o novo endereÁo seria 4093
+    x+1 ser√° igual a pr√≥xima posi√ß√£o mais 1 byte, isto √©, o novo endere√ßo seria 4093
     x+2 seria 4094
     x+3 seria 4095
 x for declarado como int?
-    x+1 ser· igual a prÛxima posiÁ„o mais 2 bytes, isto È, o novo endereÁo seria 4094
+    x+1 ser√° igual a pr√≥xima posi√ß√£o mais 2 bytes, isto √©, o novo endere√ßo seria 4094
     x+2 seria 4096
     x+3 seria 4098
 x for declarado como float?
-    x+1 ser· igual a prÛxima posiÁ„o mais 4 bytes, isto È, o novo endereÁo seria 4096
+    x+1 ser√° igual a pr√≥xima posi√ß√£o mais 4 bytes, isto √©, o novo endere√ßo seria 4096
     x+2 seria 409A
     x+3 seria 409E
 x for declarado como double?
-    x+1 ser· igual a prÛxima posiÁ„o mais 8 bytes, isto È, o novo endereÁo seria 409A
+    x+1 ser√° igual a pr√≥xima posi√ß√£o mais 8 bytes, isto √©, o novo endere√ßo seria 409A
     x+2 seria 40A2
     x+3 seria 40AA
 
